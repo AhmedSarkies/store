@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Sidebar() {
   return (
     <>
-      <ul className="col-2 list-unstyled sidebar">
+      <ul className="col-2 list-unstyled sidebar container">
         <li className="">
           <Link
             className="text-decoration-none btn text-white col-12 pt-2 pb-2"
