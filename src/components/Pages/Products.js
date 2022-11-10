@@ -54,16 +54,19 @@ function Products() {
             return (
               <tr className="text-center" key={id}>
                 <td>{id}</td>
-                <td>{title.slice(0, 15)}...</td>
+                <td>{title.slice(0, 20)}...</td>
                 <td>{description.slice(0, 30)}...</td>
                 <td>{price}</td>
                 <td className="d-flex justify-content-around align-items-center">
-                  <Link className="btn btn-info btn-sm" to={`/products/${id}`}>
+                  <Link
+                    className="btn btn-info btn-sm"
+                    to={`/products/view/${id}`}
+                  >
                     View
                   </Link>
                   <Link
                     className="btn btn-primary btn-sm"
-                    to={`/products/${id}`}
+                    to={`/products/edit/${id}`}
                   >
                     Edit
                   </Link>
